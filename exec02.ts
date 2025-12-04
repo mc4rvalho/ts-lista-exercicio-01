@@ -13,6 +13,8 @@ while (listaNumber.size < 10) {
   console.log(`\n${nome}, esse foi o número adicionado: `, listaNumber);
 }
 
-console.log(`\n${nome}, essa é a lista de números: `, listaNumber);
+console.log(`\n${nome}, essa é a lista de números original: `, listaNumber);
+
+console.log(`\n${nome}, essa é a lista de números ordenada: `, [...listaNumber].sort((a, b) => a - b));
 
 console.log(`\nObrigado por adicionar os números, ${nome}. Até a próxima!`);
